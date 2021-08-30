@@ -31,7 +31,7 @@ render() {
         <img src={post.image} className="card-img-top" alt={`${post.title} image`}/>
         <div className="card-body">
           <h5 className="card-title">{post.title}</h5>
-          <Link to={`/post/${post.id}`} className="btn custom-button">
+          <Link to={`/posts/${post.id}`} className="btn custom-button">
             View Post
           </Link>
         </div>
@@ -77,4 +77,5 @@ render() {
 }
 
 }
+
 export default Posts;
