@@ -42,7 +42,7 @@ render() {
   const noPosts = (
     <div className="vw-100 vh-50 d-flex align-items-center justify-content-center">
       <h4>
-        No posts yet. <Link to="/new_recipe">Create your first one.</Link>
+        No posts yet. <Link to="/new_post">Create your first one.</Link>
       </h4>
     </div>
   );
