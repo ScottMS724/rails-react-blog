@@ -5,6 +5,7 @@ class Post extends React.Component {
   constructor(props) {
     super(props);
     this.state = { post: { content: "" } };
+    this.deletePost = this.deletePost.bind(this);
   }
 
   componentDidMount() {
@@ -25,14 +26,30 @@ class Post extends React.Component {
       .catch(() => this.props.history.push("/posts"));
   }
 
+  deletePost() {
+    const { match: { params: { id } } } = this.props;
+    const url = `/api/v1/destroy/${id}`;
+    const token = document.querySelector('meta[name="csrf-token"]').content;
+
+    fetch(url, {
+      method: "DELETE",
+      headers: {
+        "X-CSRF-Token": token,
+        "Content-Type": "application/json"
+      }
+    })
+      .then(response => {
+        if (response.ok) {
+          return response.json();
+        }
+        throw new Error("Network response was not ok.");
+      })
+      .then(() => this.props.history.push("/posts"))
+      .catch(error => console.log(error.message));
+  }
+
   render() {
     const { post } = this.state;
-
-    if (post.content.length > 0) {
-      <li key={post.id} className="list-group-item">
-        {post.content}
-      </li>
-    }
 
     return (
       <div className="">
@@ -54,7 +71,7 @@ class Post extends React.Component {
               <div>{post.content}</div>
             </div>
             <div className="col-sm-12 col-lg-2">
-              <button type="button" className="btn btn-danger">
+              <button type="button" className="btn btn-danger" onClick={this.deletePost}> 
                 Delete Post
               </button>
             </div>
