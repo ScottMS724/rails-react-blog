@@ -52,7 +52,7 @@ class Post extends React.Component {
     const { post } = this.state;
 
     return (
-      <div className="">
+      <div className="bg-image">
         <div className="hero position-relative d-flex align-items-center justify-content-center">
           <img
             src={post.image}
