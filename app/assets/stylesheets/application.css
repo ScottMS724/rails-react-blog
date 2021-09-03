@@ -50,3 +50,9 @@
   width: 100%;
   opacity: 0.4;
 }
+
+.bg-image {
+  background-image: url(https://img.freepik.com/free-vector/white-gray-background-with-diagonal-lines-pattern_1017-25100.jpg?size=626&ext=jpg&ga=GA1.2.2103811857.1630281600);
+  height: 100vh;
+  overflow-x: scroll;
+}

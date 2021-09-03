@@ -48,7 +48,7 @@ render() {
   );
 
   return (
-    <>
+    <div className="bg-image">
       <section className="jumbotron jumbotron-fluid text-center">
         <div className="container py-5">
           <h1 className="display-4">All Blog Posts</h1>
@@ -72,7 +72,7 @@ render() {
           </Link>
         </main>
       </div>
-    </>
+    </div>
   );
 }
 
