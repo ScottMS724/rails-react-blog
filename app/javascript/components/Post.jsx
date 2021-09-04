@@ -68,7 +68,7 @@ class Post extends React.Component {
           <div className="row">
             <div className="col-sm-12 col-lg-7">
               <h5 className="mb-2">{post.title}</h5>
-              <div>{post.content}</div>
+              <div className="textarea-space">{post.content}</div>
             </div>
             <div className="col-sm-12 col-lg-2">
               <button type="button" className="btn btn-danger" onClick={this.deletePost}> 
