@@ -32,7 +32,7 @@ render() {
         <div className="card-body">
           <h5 className="card-title">{post.title}</h5>
           <Link to={`/posts/${post.id}`} className="btn custom-button">
-            View Post
+            View Blog Post
           </Link>
         </div>
       </div>
@@ -42,7 +42,7 @@ render() {
   const noPosts = (
     <div className="vw-100 vh-50 d-flex align-items-center justify-content-center">
       <h4>
-        No posts yet. <Link to="/new_post">Create your first one.</Link>
+        No blog posts yet. <Link to="/new_post">Create your first one.</Link>
       </h4>
     </div>
   );
