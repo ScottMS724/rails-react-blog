@@ -72,7 +72,7 @@ class Post extends React.Component {
             </div>
             <div className="col-sm-12 col-lg-2">
               <button type="button" className="btn btn-danger" onClick={this.deletePost}> 
-                Delete Post
+                Delete Blog Post
               </button>
             </div>
           </div>
