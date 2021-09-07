@@ -26,8 +26,8 @@ render() {
   const { posts } = this.state;
 
   const allPosts = posts.map((post, index) => (
-    <div key={index} className="col-md-6 col-lg-4">
-      <div className="card mb-4">
+    <div key={index} className="col-md-6 col-lg-4 mb-4">
+      <div className="card mb-4 card h-100">
         <img src={post.image} className="card-img-top" alt={`${post.title} image`}/>
         <div className="card-body">
           <h5 className="card-title">{post.title}</h5>
@@ -60,7 +60,7 @@ render() {
       <div className="py-5">
         <main className="container">
           <div className="text-right mb-3">
-            <Link to="/new_post" className="btn custom-button">
+            <Link to="/new_post" className="btn btn-success">
               Create New Post
             </Link>
           </div>
@@ -68,7 +68,7 @@ render() {
             {posts.length > 0 ? allPosts : noPosts}
           </div>
           <Link to="/" className="btn btn-link">
-            Home
+            <h1>Home</h1>
           </Link>
         </main>
       </div>

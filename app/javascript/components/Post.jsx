@@ -77,7 +77,7 @@ class Post extends React.Component {
             </div>
           </div>
           <Link to="/posts" className="btn btn-link">
-            Back to all blog posts.
+            <h1>Back to All Blog Posts</h1>
           </Link>
         </div>
       </div>
