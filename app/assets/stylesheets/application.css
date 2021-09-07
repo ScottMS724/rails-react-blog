@@ -40,8 +40,8 @@
   height: 50vh;
 }
 .hero img {
-  object-fit: cover;
-  object-position: top;
+  /* object-fit: cover;
+  object-position: top; */
   height: 100%;
   width: 100%;
 }
@@ -59,4 +59,10 @@
 
 .textarea-space {
   white-space: pre-wrap;
+}
+
+.card-img-top {
+  width: 100%;
+  height: 15vw;
+  object-fit: cover;
 }
