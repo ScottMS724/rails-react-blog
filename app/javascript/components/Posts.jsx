@@ -60,9 +60,9 @@ render() {
       <div className="py-5">
         <main className="container">
           <div className="text-right mb-3">
-            <Link to="/new_post" className="btn btn-success">
+            {/* <Link to="/new_post" className="btn btn-success">
               Create New Post
-            </Link>
+            </Link> */}
           </div>
           <div className="row">
             {posts.length > 0 ? allPosts : noPosts}

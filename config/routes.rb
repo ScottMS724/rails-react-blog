@@ -2,9 +2,9 @@ Rails.application.routes.draw do
   namespace :api do
     namespace :v1 do
       get 'posts/index'
-      post 'posts/create'
+      # post 'posts/create'
       get 'posts/:id', to: 'posts#show'
-      delete '/destroy/:id', to: 'posts#destroy'
+      # delete '/destroy/:id', to: 'posts#destroy'
     end
   end
   root 'homepage#index'
