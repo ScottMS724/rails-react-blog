@@ -17,7 +17,7 @@ require "sprockets/railtie"
 
 # Require the gems listed in Gemfile, including any gems
 # you've limited to :test, :development, or :production.
-Bundler.require(*Rails.groups)
+Bundler.require(:default, :assets, Rails.env)
 
 module RailsReactBlog
   class Application < Rails::Application
@@ -31,5 +31,8 @@ module RailsReactBlog
 
     # Don't generate system test files.
     config.generators.system_tests = nil
+
+    config.assets.enabled = true 
+    config.assets.version = '1.0'
   end
 end
