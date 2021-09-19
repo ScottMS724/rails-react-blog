@@ -30,5 +30,6 @@ module RailsReactRecipe
     # Don't generate system test files.
     config.generators.system_tests = nil
     config.assets.enabled = true
+    config.assets.version = '1.0'
   end
 end
