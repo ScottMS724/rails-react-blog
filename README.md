@@ -1,1 +1,1 @@
-<h3>Building a personal blog using React/Rails. In development...</h3>
+<h3>Building a personal blog using React/Rails. Currently in development...</h3>
