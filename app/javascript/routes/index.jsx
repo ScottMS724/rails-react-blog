@@ -11,7 +11,7 @@ export default (
       <Route exact path="/" component={Home} />
       <Route exact path="/posts" component={Posts} />
       <Route exact path="/posts/:id" component={Post} />
-      {/* <Route exact path="/new_post" component={NewPost} /> */}
+      <Route exact path="/new_post" component={NewPost} />
     </Switch>
   </Router>
 );
