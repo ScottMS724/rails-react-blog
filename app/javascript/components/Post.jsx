@@ -71,9 +71,9 @@ class Post extends React.Component {
               <div className="textarea-space">{post.content}</div>
             </div>
             <div className="col-sm-12 col-lg-2">
-              {/* <button type="button" className="btn btn-danger" onClick={this.deletePost}> 
+              <button type="button" className="btn btn-danger" onClick={this.deletePost}> 
                 Delete Blog Post
-              </button> */}
+              </button>
             </div>
           </div>
           <Link to="/posts" className="btn btn-link">
